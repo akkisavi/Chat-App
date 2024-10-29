@@ -4,9 +4,9 @@ import LogOutBtn from "./LogOutBtn.jsx"
 
 const SideBar = () => {
   return (
-    <div className="border-r border-slate-500 p-4 flex flex-col">
+    <div className="border-r border-white p-4 flex flex-col">
         <SearchInput/>
-        <div className="divider px-3"></div>
+        <div className="divider border-t border-white mx-0"></div>
         <Conversations/>
         <LogOutBtn/>
     </div>

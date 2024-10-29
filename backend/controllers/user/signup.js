@@ -1,6 +1,7 @@
 import User from "../../models/user.model.js";
 import bcryptjs from "bcryptjs";
 import generateTokenAndSetCookie from "../../utils/generateToken.js";
+import Toast from "react-hot-toast"
 
 const newSignup = async(req,res) => {
     try {
@@ -55,6 +56,7 @@ const newSignup = async(req,res) => {
     } catch (error) {
         console.log("Error in signup the user", error.message);
         res.status(500).json({error: "Internal Server Error"});
+        console.log(req.body)
     }
 };
 
