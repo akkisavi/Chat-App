@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { useSocketContext } from "../context/socketContext"
-import useConversation from "../store/useConversation";
+import { useSocketContext } from "../context/SocketContext.jsx"
+import useConversation from "../store/useConversation.js";
 import notificationSound from "../asset/sounds/notification.mp3"
 
 const useListenMessages = () => {
